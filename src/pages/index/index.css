@@ -14,8 +14,10 @@
   background: #ebcccc;
 }
 .test{
-  background: rgb(227, 218, 218);
+  /* background: rgb(227, 218, 218); */
   padding: 24px;
+  width: 400px;
+  height: 400px;
   min-height: 400px;
   min-width: 700px;
   margin-top: 10px;
