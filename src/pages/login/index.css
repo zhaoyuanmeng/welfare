@@ -1,0 +1,22 @@
+#components-layout-demo-fixed .logo {
+  width: 120px;
+  height: 31px;
+  background: rgba(213, 203, 203, 0.2);
+  margin: 16px 24px 16px 0;
+  float: left;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+[data-theme="dark"] .site-layout .site-layout-background {
+  background: #ebcccc;
+}
+.test{
+  background: rgb(227, 218, 218);
+  padding: 24px;
+  min-height: 400px;
+  min-width: 700px;
+  margin-top: 10px;
+}
