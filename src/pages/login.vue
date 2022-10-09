@@ -1,20 +1,34 @@
 <template>
-  <h1>测试 vueUse 的鼠标坐标</h1>
-  <h3>Mouse: {{ x }} x {{ y }}</h3>
+  <div>
+    <button @click="show = !show">测试动画</button>
+    <Transition>
+      <p v-if="show">hello</p>
+    </Transition>
+  </div>
 </template>
 <script lang="ts">
-import { defineComponent } from 'vue';
-import { useMouse } from '@vueuse/core';
+import { defineComponent, ref } from 'vue';
 
 export default defineComponent({
-  name: 'VueUse',
+  name: '',
   setup() {
-    const { x, y } = useMouse();
-
+    let show = ref(false);
     return {
-      x,
-      y,
+      show,
     };
   },
 });
 </script>
+
+<style scoped>
+/* 下面我们会解释这些 class 是做什么的 */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
