@@ -7,6 +7,7 @@ const app = createApp(App);
 import { config } from "./config/index";
 import "ant-design-vue/dist/antd.css";
 import "vant/lib/index.css";
+import "vant/es/dialog/style";
 app.use(router); // 挂载路由
 app.use(store); // 挂载pinia
 app.use(config); // 加载UI配置
