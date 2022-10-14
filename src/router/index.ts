@@ -1,27 +1,8 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/login',
-    name: 'Login',
-    meta: {
-      title: '登录',
-      keepAlive: true,
-      requireAuth: false,
-    },
-    component: () => import('@/pages/login.vue'),
-  },
-  {
-    path: '/',
-    name: 'Index',
-    meta: {
-      title: '首页',
-      keepAlive: true,
-      requireAuth: true,
-    },
-    component: () => import('@/pages/index/index.vue'),
-  },
-];
+import { mobileRouter, pcRouter } from "./config";
+
+const routes: Array<RouteRecordRaw> = [...mobileRouter, ...pcRouter];
 
 const router = createRouter({
   history: createWebHistory(),
