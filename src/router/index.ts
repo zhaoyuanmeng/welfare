@@ -8,4 +8,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+// 这里面需要加一个钩子函数
+
 export default router;
