@@ -11,6 +11,7 @@
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "suppressImplicitAnyIndexErrors":true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
