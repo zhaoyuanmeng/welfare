@@ -13,13 +13,56 @@
           <img :src="image" />
         </van-swipe-item>
       </van-swipe>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
+      <div>1111</div>
     </div>
     <div class="footer">
       <van-tabbar v-model="active">
-        <van-tabbar-item icon="home-o">标签</van-tabbar-item>
-        <van-tabbar-item icon="search">标签</van-tabbar-item>
-        <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+        <van-tabbar-item icon="home-o">新闻列表</van-tabbar-item>
+        <van-tabbar-item icon="friends-o">数据展示</van-tabbar-item>
+        <van-tabbar-item icon="setting-o">个人中心</van-tabbar-item>
       </van-tabbar>
     </div>
   </div>
