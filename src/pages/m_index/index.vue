@@ -15,16 +15,18 @@
       </div>
     </div>
     <div class="content">
-      <van-tabs v-model:active="active1">
-        <van-tab v-for="index in 8" :title="'标签 ' + index">
+      <van-tabs v-model:active="activeName">
+        <van-tab v-for="item in tabs" :title="item.title">
+          <div v-if="item.name == 'Recommond'"><Recommond></Recommond></div>
+          <div v-if="item.name == 'Impornent'"><Impornent></Impornent></div>
           <!-- 这里面根据传入的东西来判断用啥组件 -->
-          <div>
+          <!-- <div>
             <van-swipe :autoplay="3000" lazy-render class="my-swipe">
               <van-swipe-item v-for="image in images" :key="image" :width="300">
                 <img :src="image" />
               </van-swipe-item>
             </van-swipe>
-          </div>
+          </div> -->
         </van-tab>
       </van-tabs>
     </div>
@@ -39,7 +41,6 @@
         >
       </van-tabbar>
     </div>
-    <Import></Import>
   </div>
 </template>
 
@@ -47,17 +48,20 @@
 import { ref } from "vue";
 
 // 引入组件
-import Import from "../m_tabs/m_import/index.vue";
+import Impornent from "../m_tabs/m_import/index.vue";
+import Recommond from "../m_tabs/m_recommond/index.vue";
 
-const active1 = ref(0);
-const images = [
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg",
-];
+const activeName = ref("impornent");
+
 // 后期这里做成配置的 通过vuexs
 const tabs = [
   {
-    title: "",
+    title: "推荐",
+    name: "Recommond",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
   },
 ];
 
