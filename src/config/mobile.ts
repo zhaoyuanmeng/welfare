@@ -17,8 +17,11 @@ import {
   Dialog,
   NoticeBar,
   Skeleton,
+  Toast,
   Swipe,
   SwipeItem,
+  NavBar,
+  Search,
 } from "vant";
 
 export default {
@@ -36,4 +39,7 @@ export default {
   Skeleton,
   Swipe,
   SwipeItem,
+  NavBar,
+  Search,
+  Toast,
 };

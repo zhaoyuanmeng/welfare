@@ -1,6 +1,18 @@
 <template>
   <div class="main">
-    <div class="header"></div>
+    <div class="header">
+      <van-search
+        v-model="value"
+        show-action
+        background="#4fc08d"
+        placeholder="请输入搜索关键词"
+        @search="onSearch"
+      >
+        <template #action>
+          <div @click="onClickButton">搜索</div>
+        </template>
+      </van-search>
+    </div>
     <div class="content">
       <div>echarts数据</div>
     </div>
@@ -21,11 +33,10 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const active1 = ref(0);
-const images = [
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg",
-];
+import { Toast } from "vant";
+const value = ref("");
+const onSearch = (val: string) => Toast(val);
+const onClickButton: any = () => Toast(value.value);
 </script>
 
 <style>
