@@ -4,7 +4,7 @@
       <van-search
         v-model="value"
         show-action
-        background="#4fc08d"
+        background="rgb(248, 14, 33)"
         placeholder="请输入搜索关键词"
         @search="onSearch"
       >
@@ -38,6 +38,6 @@ const onSearch = (val: string) => Toast(val);
 const onClickButton: any = () => Toast(value.value);
 </script>
 
-<style>
+<style lang="scss" scoped>
 @import "./index.scss";
 </style>

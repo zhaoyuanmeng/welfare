@@ -19,14 +19,6 @@
         <van-tab v-for="item in tabs" :title="item.title">
           <div v-if="item.name == 'Recommond'"><Recommond></Recommond></div>
           <div v-if="item.name == 'Impornent'"><Impornent></Impornent></div>
-          <!-- 这里面根据传入的东西来判断用啥组件 -->
-          <!-- <div>
-            <van-swipe :autoplay="3000" lazy-render class="my-swipe">
-              <van-swipe-item v-for="image in images" :key="image" :width="300">
-                <img :src="image" />
-              </van-swipe-item>
-            </van-swipe>
-          </div> -->
         </van-tab>
       </van-tabs>
     </div>
@@ -58,6 +50,38 @@ const tabs = [
   {
     title: "推荐",
     name: "Recommond",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
+  },
+  {
+    title: "重要",
+    name: "Impornent",
   },
   {
     title: "重要",

@@ -19,15 +19,8 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { ref } from "vue";
-const active1 = ref(0);
-const images = [
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",
-  "https://fastly.jsdelivr.net/npm/@vant/assets/apple-2.jpeg",
-];
-</script>
+<script lang="ts" setup></script>
 
-<style>
+<style lang="scss" scoped>
 @import "./index.scss";
 </style>

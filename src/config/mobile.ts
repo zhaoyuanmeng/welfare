@@ -22,6 +22,11 @@ import {
   SwipeItem,
   NavBar,
   Search,
+  Grid,
+  GridItem,
+  Divider,
+  PullRefresh,
+  Card,
 } from "vant";
 
 export default {
@@ -42,4 +47,9 @@ export default {
   NavBar,
   Search,
   Toast,
+  Grid,
+  GridItem,
+  Divider,
+  PullRefresh,
+  Card,
 };
