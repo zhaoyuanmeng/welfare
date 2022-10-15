@@ -58,11 +58,16 @@
       <div>1111</div>
       <div>1111</div>
     </div>
+    <!-- 这里可以弄路由 -->
     <div class="footer">
-      <van-tabbar v-model="active">
-        <van-tabbar-item icon="home-o">新闻列表</van-tabbar-item>
-        <van-tabbar-item icon="friends-o">数据展示</van-tabbar-item>
-        <van-tabbar-item icon="setting-o">个人中心</van-tabbar-item>
+      <van-tabbar route>
+        <van-tabbar-item icon="home-o" replace to="/">首页</van-tabbar-item>
+        <van-tabbar-item icon="friends-o" replace to="/m_data"
+          >数据展示</van-tabbar-item
+        >
+        <van-tabbar-item icon="setting-o" replace to="/m_login"
+          >个人中心</van-tabbar-item
+        >
       </van-tabbar>
     </div>
   </div>
@@ -70,7 +75,6 @@
 
 <script lang="ts" setup>
 import { ref } from "vue";
-const active = ref(0);
 const active1 = ref(0);
 const images = [
   "https://fastly.jsdelivr.net/npm/@vant/assets/apple-1.jpeg",

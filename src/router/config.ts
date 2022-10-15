@@ -6,24 +6,31 @@
  */
 export const mobileRouter = [
   {
+    path: "/",
+    name: "mIndex",
+    meta: {
+      title: "手机首页",
+      keepAlive: true,
+    },
+    component: () => import("@/pages/m_index/index.vue"),
+  },
+  {
     path: "/m_login",
     name: "mLogin",
     meta: {
       title: "手机登录",
       keepAlive: true,
-      requireAuth: false,
     },
     component: () => import("@/pages/m_login/index.vue"),
   },
   {
-    path: "/m_index",
-    name: "mIndex",
+    path: "/m_data",
+    name: "mData",
     meta: {
-      title: "手机首页",
+      title: "数据展示页",
       keepAlive: true,
-      requireAuth: true,
     },
-    component: () => import("@/pages/m_index/index.vue"),
+    component: () => import("@/pages/m_echarts/index.vue"),
   },
 ];
 /**
