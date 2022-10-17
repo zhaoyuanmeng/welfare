@@ -19,7 +19,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+console.log("aaa");
+</script>
 
 <style lang="scss" scoped>
 @import "./index.scss";
