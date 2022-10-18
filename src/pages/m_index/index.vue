@@ -1,4 +1,5 @@
 <template>
+  <Msearch ref="mSearch"></Msearch>
   <div class="main">
     <div class="header">
       <div class="header-search">
@@ -9,6 +10,7 @@
             v-model="value"
             shape="round"
             placeholder="请输入搜索关键词"
+            @focus="searchFocus"
           />
         </div>
         <div class="text">我的</div>
@@ -41,7 +43,7 @@ import { ref } from "vue";
 // 引入组件
 import Impornent from "../m_tabs/m_import/index.vue";
 import Recommond from "../m_tabs/m_recommond/index.vue";
-
+import Msearch from "../m_search/index.vue";
 const activeName = ref("impornent");
 
 // 后期这里做成配置的 通过vuexs
@@ -87,8 +89,13 @@ const tabs = [
     name: "Impornent",
   },
 ];
-
+let mSearch = ref<any>(null);
 let value = ref("");
+
+const searchFocus = () => {
+  console.log("aaa", mSearch.value);
+  mSearch.value.toShow();
+};
 </script>
 
 <style lang="scss" scoped>

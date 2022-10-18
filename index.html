@@ -16,36 +16,7 @@
   <body>
     <div id="app"></div>
   
-    <script>
-       (function () {
-
-          if (typeof MCK == "undefined") {
-            var jsElem = document.createElement("script");
-
-            // 此处应该替换为mc-sdk.js的真实地址
-            jsElem.src = "/src/utils/test.js";
-
-            document.body.appendChild(jsElem);
-
-            jsElem.onload = function () {
-
-              // 此处应该替换为你自己申请的 appkey
-              var appkey = "9f46f04c";
-
-              // 只能调用一次！！！！
-              MCK.auth(appkey);
-
-              // 可以多次调用（这是一个异步触发的回调函数）
-              MCK.ready(function () {
-                // 验证通过，可以放心调用 API
-              });
-
-            };
-          }
-
-        })();
-
-    </script>
+    
     <script type="module" src="/src/main.ts">
      
     </script>

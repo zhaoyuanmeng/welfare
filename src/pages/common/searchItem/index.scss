@@ -1,0 +1,25 @@
+.search-item {
+  padding: 20px;
+  .title {
+    padding-bottom: 2px;
+    border-bottom: 1px solid rgb(7, 64, 178);
+  }
+  .content {
+    padding: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    &.fl {
+      display: flex;
+      width: 100%;
+      margin: 6px auto;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      .item {
+        width: 50%;
+        color: red;
+      }
+    }
+   
+  }
+}
